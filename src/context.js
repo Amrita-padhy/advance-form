@@ -3,7 +3,7 @@ import { formJson } from "./data";
 
 const AppContext = createContext({
   form: [],
-  addForm: () => null,
+  addForm: () => null
 });
 
 export const useAppContext = () => {
@@ -12,6 +12,7 @@ export const useAppContext = () => {
 
 export const AppContextProvider = ({ children }) => {
   const [form, setForm] = useState([formJson]);
+  
   const addForm = () => {
     const tempForm = [...form];
     tempForm.push(formJson);

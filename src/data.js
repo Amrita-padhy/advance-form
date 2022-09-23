@@ -1,4 +1,6 @@
-export const formJson = [{
+export const formJson = [
+    // text area
+    {
         id: "1",
         label: `
                 If you have problem with pain/aches 
@@ -8,17 +10,19 @@ export const formJson = [{
                     troublesome first)
                 `,
         type: "textarea",
-        value: "hey",
+        value: "",
         style: {
             display: "block",
             mx: "5%",
             my: "15px",
         },
     },
+    // radio 1
     {
         id: "2",
         label: "Hove you been diagonsed with this problem?",
         type: "radio",
+        value: '',
         style: {
             display: "flex",
             alignItems: "center",
@@ -26,30 +30,33 @@ export const formJson = [{
             mx: "5%",
             my: "15px",
         },
-        options: [{
+        options: [
+            {
                 id: "1",
                 label: "Not Relevant",
                 type: "radio",
-                value: 1,
+                value: '1',
             },
             {
                 id: "2",
                 label: "Yes",
                 type: "radio",
-                value: 2,
+                value: '2',
             },
             {
                 id: "3",
                 label: "No",
                 type: "radio",
-                value: 3,
+                value: '3',
             },
         ],
     },
+    // radio 2
     {
         id: "3",
         label: "Did the problem start from a physical trauma?",
         type: "radio",
+        value: '',
         style: {
             display: "flex",
             alignItems: "center",
@@ -58,25 +65,26 @@ export const formJson = [{
             my: "15px",
         },
         options: [{
-                id: "1",
-                label: "Not Relevant",
-                type: "radio",
-                value: 1,
-            },
-            {
-                id: "2",
-                label: "Yes",
-                type: "radio",
-                value: 2,
-            },
-            {
-                id: "3",
-                label: "No",
-                type: "radio",
-                value: 3,
-            },
+            id: "1",
+            label: "Not Relevant",
+            type: "radio",
+            value: 1,
+        },
+        {
+            id: "2",
+            label: "Yes",
+            type: "radio",
+            value: 2,
+        },
+        {
+            id: "3",
+            label: "No",
+            type: "radio",
+            value: 3,
+        },
         ],
     },
+    // radio 3
     {
         id: "4",
         label: "Did the problem start from a mental trauma?",
@@ -90,60 +98,64 @@ export const formJson = [{
             my: "15px",
         },
         options: [{
-                id: "1",
-                label: "Not Relevant",
-                type: "radio",
-                value: 1,
-            },
-            {
-                id: "2",
-                label: "Yes",
-                type: "radio",
-                value: 2,
-            },
-            {
-                id: "3",
-                label: "No",
-                type: "radio",
-                value: 3,
-            },
+            id: "1",
+            label: "Not Relevant",
+            type: "radio",
+            value: '1',
+        },
+        {
+            id: "2",
+            label: "Yes",
+            type: "radio",
+            value: '2',
+        },
+        {
+            id: "3",
+            label: "No",
+            type: "radio",
+            value: '3',
+        },
         ],
     },
+    // checkbox 
     {
         id: "5",
         label: "How often do you experience the problem?",
         type: "checkbox",
-        value: "",
+        value: [],
         style: {
             display: "block",
             mx: "5%",
             my: "15px",
         },
-        options: [{
+        options: [
+            {
                 id: "1",
                 label: "Not Relevant",
                 type: "checkbox",
-                value: 1,
+                value: '1',
             },
             {
                 id: "2",
                 label: "Daily",
                 type: "checkbox",
-                value: 1,
+                value: '2',
             },
             {
                 id: "3",
                 label: "Several Times/week",
                 type: "checkbox",
+                value: '3',
             },
             {
                 id: "4",
                 label: "a few times/Monts",
                 type: "checkbox",
-                value: 1,
+                value: '4',
             },
         ],
     },
+    // radio 4
     {
         id: "6",
         label: "How intense is the problem on an avarage 1-10 scale?",
@@ -154,9 +166,11 @@ export const formJson = [{
             mx: "5%",
             my: "15px",
         },
-        options: [{
+        options: [
+            {
                 id: "1",
                 label: "1",
+                value: "1",
                 type: "radio",
                 style: {
                     display: "flex",
@@ -166,6 +180,7 @@ export const formJson = [{
             {
                 id: "2",
                 label: "2",
+                value: "2",
                 type: "radio",
                 style: {
                     display: "flex",
@@ -175,6 +190,7 @@ export const formJson = [{
             {
                 id: "3",
                 label: "3",
+                value: "3",
                 type: "radio",
                 style: {
                     display: "flex",
@@ -184,6 +200,7 @@ export const formJson = [{
             {
                 id: "4",
                 label: "4",
+                value: "4",
                 type: "radio",
                 style: {
                     display: "flex",
@@ -193,6 +210,7 @@ export const formJson = [{
             {
                 id: "5",
                 label: "5",
+                value: "5",
                 type: "radio",
                 style: {
                     display: "flex",
@@ -202,6 +220,7 @@ export const formJson = [{
             {
                 id: "6",
                 label: "6",
+                value: "6",
                 type: "radio",
                 style: {
                     display: "flex",
@@ -211,6 +230,7 @@ export const formJson = [{
             {
                 id: "7",
                 label: "7",
+                value: "7",
                 type: "radio",
                 style: {
                     display: "flex",
@@ -220,6 +240,7 @@ export const formJson = [{
             {
                 id: "8",
                 label: "8",
+                value: "8",
                 type: "radio",
                 style: {
                     display: "flex",
@@ -229,6 +250,7 @@ export const formJson = [{
             {
                 id: "9",
                 label: "9",
+                value: "9",
                 type: "radio",
                 style: {
                     display: "flex",
@@ -238,6 +260,7 @@ export const formJson = [{
             {
                 id: "10",
                 label: "10",
+                value: "10",
                 type: "radio",
                 style: {
                     display: "flex",
